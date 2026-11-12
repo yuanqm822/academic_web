@@ -9,7 +9,7 @@ and hosted on GitHub Pages at <https://yuanqm822.github.io/academic_web/>.
 | To change | Edit |
 | --- | --- |
 | Name, sidebar text, profile links (email, Google Scholar, ORCID) | `_config.yml`, under `author:` |
-| Profile photo | replace `images/profile.png` |
+| Profile photo | replace `images/profile.jpg` |
 | Home page text | `_pages/about.md` |
 | Research page | `_pages/research.md` |
 | CV | `_pages/cv.md` |

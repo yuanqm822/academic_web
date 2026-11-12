@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Qiming (Simon) Yuan"
-  avatar           : "profile.png" # replace images/profile.png with your photo
+  avatar           : "profile.jpg" # replace images/profile.jpg to change the photo
   bio              : "Speech and language neuroscientist. Computational Technical Expert at CINN, University of Reading."
   location         : "Reading, UK"
   employer         : "University of Reading"
