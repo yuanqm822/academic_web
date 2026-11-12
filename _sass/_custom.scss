@@ -18,8 +18,8 @@ $font-body  : "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, "Helvetica Neu
 $font-head  : "IBM Plex Serif", Georgia, "Times New Roman", serif;
 
 $wide       : 900px;     // sidebar sits beside the content from this width
-$page-max   : 1120px;
-$sidebar-w  : 232px;
+$page-max   : 1150px;
+$sidebar-w  : 272px;     // wide enough for the name on one line
 $measure    : 43rem;     // comfortable line length for the content column
 
 
@@ -74,15 +74,50 @@ button:focus-visible {
   }
 }
 
-.greedy-nav {
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 0 -0.5rem;
+
+  a {
+    display: block;
+    padding: 0.35rem 0;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+}
+
+.site-nav__name {
+  margin-right: 1.75rem !important;
+  color: $accent;
+  font-family: $font-head;
+  font-size: 1.15em;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+
+  &:visited { color: $accent; }
+}
+
+.site-nav__links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li { margin: 0 0.6rem 0 0; }
+
   a {
     position: relative;
-    margin: 0 1rem;
     color: $slate;
     font-size: 0.95em;
     font-weight: 500;
+    white-space: nowrap;
 
-    &:hover { color: $accent; }
+    &:visited { color: $slate; }
+    &:hover   { color: $accent; }
 
     &.is-current {
       color: $accent;
@@ -97,28 +132,6 @@ button:focus-visible {
         background: $accent;
       }
     }
-  }
-
-  .visible-links li:first-child a {
-    margin-right: 1.4rem;
-    color: $accent;
-    font-family: $font-head;
-    font-size: 1.15em;
-    font-weight: 600;
-    letter-spacing: -0.005em;
-  }
-
-  button {
-    background-color: $accent;
-    border-radius: 3px;
-  }
-
-  .hidden-links {
-    border-color: $rule;
-    box-shadow: 0 8px 24px rgba($ink, 0.12);
-
-    a { margin: 0; padding: 0.6rem 1rem; }
-    a.is-current:after { display: none; }
   }
 }
 
@@ -154,7 +167,7 @@ button:focus-visible {
     flex: 0 0 $sidebar-w;
     float: none;
     width: $sidebar-w;
-    margin: 0 3.5rem 0 0;
+    margin: 0 3rem 0 0;
     padding: 0;
     position: static;
     opacity: 1;
