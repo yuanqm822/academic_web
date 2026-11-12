@@ -221,11 +221,13 @@ button:focus-visible {
 .author__name-alt {
   display: block;
   margin-top: 0.3em;
-  color: $slate;
-  font-family: "Noto Serif SC", "Songti SC", "STSong", "SimSun", "PingFang SC", "Microsoft YaHei", $font-head;
+  color: $ink;
+  // Microsoft YaHei where the device has it (Windows); the closest system
+  // Chinese sans-serif elsewhere (PingFang on Apple, Noto Sans on Android)
+  font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Noto Sans SC", "Noto Sans CJK SC", "Hiragino Sans GB", "Source Han Sans SC", sans-serif;
   font-size: 0.82em;
   font-weight: 500;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   line-height: 1.3;
 }
 
