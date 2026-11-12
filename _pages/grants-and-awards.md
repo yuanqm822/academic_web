@@ -36,6 +36,14 @@ Scholarships and awards
 
 <div class="dated">
   <div class="dated__row">
+    <div class="dated__when"></div>
+    <div class="dated__body">
+      <h3>Collaboration Award</h3>
+      <p class="entry__meta">Department of Experimental Psychology, University of Oxford.</p>
+      <p>For initiating and leading the Oxford – Beijing Normal University research collaboration.</p>
+    </div>
+  </div>
+  <div class="dated__row">
     <div class="dated__when">2024 – 2026</div>
     <div class="dated__body">
       <h3>BNA Scholar</h3>
@@ -68,6 +76,13 @@ Scholarships and awards
     </div>
   </div>
   <div class="dated__row">
+    <div class="dated__when">2022</div>
+    <div class="dated__body">
+      <h3>Outstanding Graduate</h3>
+      <p class="entry__meta">Beijing Municipal Education Commission.</p>
+    </div>
+  </div>
+  <div class="dated__row">
     <div class="dated__when">2021</div>
     <div class="dated__body">
       <h3>National Graduate Scholarship</h3>
@@ -79,6 +94,13 @@ Scholarships and awards
     <div class="dated__body">
       <h3>BNU Liyun First Prize Graduate Scholarship</h3>
       <p class="entry__meta">Beijing Normal University.</p>
+    </div>
+  </div>
+  <div class="dated__row">
+    <div class="dated__when">2019</div>
+    <div class="dated__body">
+      <h3>NENU Medal and Outstanding Graduate</h3>
+      <p class="entry__meta">Northeast Normal University.</p>
     </div>
   </div>
   <div class="dated__row">
