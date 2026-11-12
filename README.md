@@ -2,7 +2,7 @@
 
 Personal academic website of Simon (Qiming) Yuan, built with Jekyll on the
 [academicpages](https://github.com/academicpages/academicpages.github.io) template
-and hosted on GitHub Pages at <https://yuanqm822.github.io/academic_web/>.
+and hosted on GitHub Pages at <https://simon-qiming-yuan.com>.
 
 ## Where things live
 

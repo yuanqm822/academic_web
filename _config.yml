@@ -11,8 +11,8 @@ title                    : "Simon (Qiming) Yuan"
 title_separator          : "-"
 name                     : &name "Simon (Qiming) Yuan"
 description              : &description "Speech and language neuroscientist. Computational Technical Expert at the Centre for Integrative Neuroscience and Neurodynamics (CINN), University of Reading."
-url                      : https://yuanqm822.github.io
-baseurl                  : "/academic_web" # the subpath of your site
+url                      : https://simon-qiming-yuan.com
+baseurl                  : "" # empty: the site is served from the root of the custom domain
 repository               : "yuanqm822/academic_web"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
