@@ -320,6 +320,139 @@ button:focus-visible {
 
 
 /*
+   Phones and small tablets (below the sidebar breakpoint)
+   The home page shows the full profile: photo, name, bio and contact links.
+   Other pages show a slim photo-and-name strip so the content starts sooner.
+   ========================================================================== */
+
+@media (max-width: $wide - 1px) {
+  .masthead__inner-wrap {
+    padding: 0.7em 1.25em 0.55em;
+  }
+
+  .site-nav__name {
+    flex: 0 0 100%;
+    margin-right: 0 !important;
+  }
+
+  .site-nav__links {
+    li { margin-right: 0.35rem; }
+    a  { font-size: 0.9em; }
+  }
+
+  #main {
+    margin-top: 1.4em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+
+  .sidebar {
+    margin-bottom: 1.6em;
+    padding-bottom: 1.1em;
+    border-bottom: 1px solid $rule;
+  }
+
+  .author {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  // slim strip (every page except home)
+  .author__avatar {
+    display: block;
+    flex: 0 0 auto;
+    width: 52px;
+
+    img { width: 52px; }
+  }
+
+  .author__content {
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
+    padding-left: 14px;
+  }
+
+  .sidebar .author__name {
+    margin: 0;
+    font-size: 1.1em;
+  }
+
+  .author__bio,
+  .author__urls-wrapper {
+    display: none;
+  }
+
+  .author__urls-wrapper button {
+    display: none;
+  }
+
+  // full profile (home)
+  .sidebar--home {
+    .author__avatar {
+      width: 84px;
+
+      img { width: 84px; }
+    }
+
+    .author__content { padding-left: 16px; }
+
+    .author__name { font-size: 1.15em; }
+
+    .author__bio {
+      display: block;
+      margin: 0.35em 0 0;
+      font-size: 0.875em;
+    }
+
+    .author__urls-wrapper {
+      display: block;
+      flex: 0 0 100%;
+      margin-top: 1.1em;
+      cursor: default;
+    }
+
+    .author__urls {
+      display: flex !important;
+      flex-wrap: wrap;
+      position: static;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+
+      &:before, &:after { display: none; }
+
+      li {
+        margin: 0 1.1rem 0.15rem 0;
+        white-space: nowrap;
+      }
+
+      a {
+        display: block;
+        padding: 0.3rem 0;
+        margin: 0;
+      }
+
+      .author__address {
+        flex: 0 0 100%;
+        margin: 0 0 0.35rem;
+        white-space: normal;
+
+        span span { margin-bottom: 0.1rem; }
+      }
+
+      .author__email { flex: 0 0 100%; }
+    }
+  }
+
+  .page__title { margin-top: 0; }
+}
+
+
+/*
    Content
    ========================================================================== */
 
