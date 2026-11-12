@@ -1,0 +1,10 @@
+# Links in the top menu
+main:
+  - title: "Research"
+    url: /research/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "CV"
+    url: /cv/

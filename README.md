@@ -1,0 +1,45 @@
+# academic_web
+
+Personal academic website of Qiming (Simon) Yuan, built with Jekyll on the
+[academicpages](https://github.com/academicpages/academicpages.github.io) template
+and hosted on GitHub Pages at <https://yuanqm822.github.io/academic_web/>.
+
+## Where things live
+
+| To change | Edit |
+| --- | --- |
+| Name, sidebar text, profile links (email, Google Scholar, ORCID) | `_config.yml`, under `author:` |
+| Profile photo | replace `images/profile.png` |
+| Home page text | `_pages/about.md` |
+| Research page | `_pages/research.md` |
+| CV | `_pages/cv.md` |
+| Top menu | `_data/navigation.yml` |
+
+## Adding a publication
+
+Add one file to `_publications/`, named `YEAR-short-title.md`, containing only front matter:
+
+```yaml
+---
+title: "Paper title"
+collection: publications
+type: article        # or: thesis
+authors: "Yuan Q, Coauthor AB"
+venue: "Journal Name"
+year: 2026
+date: 2026-03-01     # used for ordering
+volume: "12"
+issue: "3"           # optional
+pages: "100–110"
+doi: "10.xxxx/xxxxx"
+---
+```
+
+It then appears on the Publications page, the CV, and (if recent) the home page.
+
+## Previewing locally
+
+```
+bundle install
+bundle exec jekyll serve
+```

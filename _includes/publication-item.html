@@ -1,0 +1,6 @@
+{%- comment -%}One publication, formatted as a reference. Expects `pub`.{%- endcomment -%}
+<li class="publication">
+  {{ pub.authors | replace: "Yuan Q", "<strong>Yuan Q</strong>" }} ({{ pub.year }}).
+  {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}.
+  {% if pub.type == "thesis" %}{{ pub.venue }}.{% else %}<em>{{ pub.venue }}</em>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.issue %}({{ pub.issue }}){% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}.{% endif %}
+</li>
