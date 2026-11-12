@@ -10,13 +10,13 @@ redirect_from:
 Current position
 ------
 
-**Computational Technical Expert**, 2026 – present<br>
+**Computational Technical Expert**, Oct 2026 – present<br>
 Centre for Integrative Neuroscience and Neurodynamics (CINN), University of Reading, UK
 
 Education
 ------
 
-* **DPhil (PhD) in Experimental Psychology**, University of Oxford, UK, Oct 2022 – Jul 2026
+* **DPhil (PhD) in Experimental Psychology**, University of Oxford, UK, Oct 2022 – Aug 2026
   * Thesis: *The corticocerebellar network in speech adaptation: evidence from non-invasive brain stimulation and brain imaging*
   * Supervisors: Prof. Kate E. Watkins and Prof. Heidi Johansen-Berg
 * **MSc in Psychology**, Beijing Normal University, China, Sep 2019 – Jul 2022
