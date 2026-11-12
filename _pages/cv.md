@@ -47,12 +47,12 @@ Research experience
 
 *Role of the cerebellum in speech, language and reading*
 
-* Examined the dissociation between language control and domain-general cognitive control within the cerebellum, combining an fMRI study (48 participants) with a tDCS study (72 participants) and effective-connectivity modelling of cerebello-cortical circuits.
+* Examined the dissociation between language control and domain-general cognitive control within the cerebellum, combining an fMRI study (48 participants) with a tDCS study (72 participants) and effective-connectivity modelling of cerebello-cortical circuits ([*Cerebral Cortex*, 2023](https://doi.org/10.1093/cercor/bhac051)).
 * Proposed the cerebro-cerebellar mapping hypothesis of the cerebellum's contribution to reading, in a systematic review (*Neuropsychologia*, 2022).
 
 *Neurobiology of bilingualism*
 
-* Mapped the cortical networks of bilingual language production across two fMRI studies (~50 participants each) using multivoxel pattern analysis and effective-connectivity network modelling.
+* Mapped the cortical networks of bilingual language production across two fMRI studies (~50 participants each) using multivoxel pattern analysis and effective-connectivity network modelling ([*Brain Structure and Function*, 2021](https://doi.org/10.1007/s00429-021-02218-7)).
 * Ran a [preregistered EEG study](https://osf.io/xyqfr/) (24 participants) on continuous neural tracking of speech in noise in bilinguals.
 * Co-developed an open database of ~3,000 Chinese characters and ~2,200 words from primary-school textbooks, a resource for developmental reading research.
 
