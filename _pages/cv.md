@@ -22,8 +22,6 @@ Education
 * **MSc in Psychology**, Beijing Normal University, China, Sep 2019 – Jul 2022
   * State Key Laboratory of Cognitive Neuroscience and Learning
 * **BSc in Psychology**, Northeast Normal University, China, Sep 2015 – Jun 2019
-  * Ranked first in the department
-  * Exchange student at Southern Illinois University, USA (2017 – 2018); Top 5% Student Award, Dean's List
 
 Teaching and supervision
 ------
