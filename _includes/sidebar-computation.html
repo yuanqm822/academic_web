@@ -1,0 +1,47 @@
+{% assign comp = site.data.computation %}
+{% if comp and comp.gitlab_user %}
+{% assign comp_profile = comp.gitlab_url | append: "/" | append: comp.gitlab_user %}
+<div class="sidebar__block sidebar__computation">
+  <h3 class="sidebar__block-title">Computation</h3>
+  {% if comp.repos and comp.repos.size > 0 %}
+  <ul class="sidebar__repos">
+    {% for r in comp.repos %}
+      <li><a href="{{ r.url }}">{{ r.name }}</a>{% if r.description %}<span>{{ r.description }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <ul class="sidebar__repos" id="gitlab-repos"
+      data-api="{{ comp.gitlab_url }}/api/v4/users/{{ comp.gitlab_user }}/projects?order_by=last_activity_at&amp;per_page={{ comp.max_repos | default: 5 }}"
+      data-base="{{ comp.gitlab_url }}/"></ul>
+  <script>
+    // Lists public GitLab projects. If GitLab can't be reached, the block keeps just the profile link.
+    (function () {
+      var list = document.getElementById("gitlab-repos");
+      if (!list || !window.fetch) { return; }
+      var base = list.getAttribute("data-base");
+      fetch(list.getAttribute("data-api"))
+        .then(function (r) { return r.ok ? r.json() : []; })
+        .then(function (projects) {
+          if (!Array.isArray(projects)) { return; }
+          projects.forEach(function (p) {
+            if (!p || typeof p.web_url !== "string" || p.web_url.indexOf(base) !== 0) { return; }
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            a.href = p.web_url;
+            a.textContent = p.name || p.path;
+            li.appendChild(a);
+            if (p.description) {
+              var d = document.createElement("span");
+              d.textContent = p.description;
+              li.appendChild(d);
+            }
+            list.appendChild(li);
+          });
+        })
+        .catch(function () {});
+    })();
+  </script>
+  {% endif %}
+  <a class="sidebar__block-more" href="{{ comp_profile }}">All code on GitLab</a>
+</div>
+{% endif %}
