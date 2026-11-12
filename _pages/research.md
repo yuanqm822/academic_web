@@ -22,7 +22,7 @@ I use structural and resting-state fMRI to characterise how brain structure, act
 Language production in bilinguals
 ------
 
-Bilingual speakers have to select the intended language and keep the other from interfering. Using fMRI, multivoxel pattern analysis and effective-connectivity modelling, I have mapped the brain networks behind this language control ([Yuan et al., 2021, *Brain Structure and Function*](https://doi.org/10.1007/s00429-021-02218-7)), how they relate to domain-general cognitive control, and how they change with training and with language context. I have also used EEG to study how bilinguals track continuous speech in noise ([preregistration](https://osf.io/xyqfr/)).
+Bilingual speakers have to select the intended language and keep the other from interfering. Using fMRI, multivoxel pattern analysis and effective-connectivity modelling, I have mapped the brain networks behind this language control ([Yuan et al., 2021, *Brain Structure and Function*](https://doi.org/10.1007/s00429-021-02218-7)), how they relate to domain-general cognitive control, and how they change with training and with language context. I have also used EEG to study how bilinguals track continuous speech in noise ([Zinszer, Yuan et al., 2022, *Brain and Language*](https://doi.org/10.1016/j.bandl.2022.105128); [preregistration](https://osf.io/xyqfr/)).
 
 The cerebellum in speech, language and reading
 ------
