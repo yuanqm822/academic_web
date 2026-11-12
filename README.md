@@ -15,7 +15,6 @@ and hosted on GitHub Pages at <https://yuanqm822.github.io/academic_web/>.
 | CV | `_pages/cv.md` |
 | Grants and awards page | `_pages/grants-and-awards.md` |
 | Computation page | `_pages/computation.md` |
-| Funders listed in the sidebar | `_data/funders.yml` |
 | GitLab projects on the Computation page | `_data/computation.yml` |
 | Colours, fonts and layout | `_sass/_custom.scss` (the "Tokens" block at the top) |
 | Top menu | `_data/navigation.yml` |

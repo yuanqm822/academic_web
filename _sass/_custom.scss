@@ -232,10 +232,6 @@ button:focus-visible {
   .fa, .fas, .fab, .ai { color: $slate; }
 }
 
-.sidebar__block {
-  display: none;
-}
-
 @media (min-width: $wide) {
   .author__avatar {
     display: block;
@@ -286,45 +282,6 @@ button:focus-visible {
     li { white-space: normal; }
     a  { margin-bottom: 0; }
   }
-
-  .sidebar__block {
-    display: block;
-    margin-top: 1.1rem;
-    padding-top: 1rem;
-    border-top: 1px solid $rule;
-
-    ul {
-      margin: 0 0 0.6rem;
-      padding: 0;
-      list-style: none;
-
-      &:empty { display: none; }
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-      color: $slate;
-      font-size: 0.8125rem;
-      line-height: 1.45;
-    }
-  }
-
-  .sidebar .sidebar__block-title {
-    margin: 0 0 0.6rem;
-    font-family: $font-head;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-
-  .sidebar__block-more {
-    font-size: 0.8125rem;
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: rgba($accent, 0.35);
-    text-underline-offset: 0.18em;
-
-    &:hover { text-decoration-color: $accent-dark; }
-  }
 }
 
 
@@ -351,6 +308,9 @@ button:focus-visible {
     font-size: 1.4em;
     line-height: 1.25;
   }
+
+  // a section heading straight under the page title needs less space above it
+  > h2:first-child { margin-top: 1.6rem; }
 
   h3 {
     margin: 1.6rem 0 0.4rem;
