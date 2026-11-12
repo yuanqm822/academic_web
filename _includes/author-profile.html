@@ -4,18 +4,21 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
+{% comment %}`name` in _config.yml may be one name or a list: the first is the main name, any others are shown beneath it.{% endcomment %}
+{% assign author_names = author.name | join: "|" | split: "|" %}
+
 <div class="author" itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}">
+    	<img src="{{ author.avatar }}" alt="{{ author_names[0] }}">
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author_names[0] }}">
     {% endif %}
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name" itemprop="name">{{ author_names[0] }}{% for n in author_names offset: 1 %}<span class="author__name-alt" itemprop="alternateName">{{ n }}</span>{% endfor %}</h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
