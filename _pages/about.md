@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About"
+title: "About me"
 excerpt: "Speech and language neuroscientist at the University of Reading"
 author_profile: true
 redirect_from:
