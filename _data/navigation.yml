@@ -6,8 +6,11 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Funding"
-    url: /funding/
+  - title: "Computation"
+    url: /computation/
+
+  - title: "Grants and awards"
+    url: /grants-and-awards/
 
   - title: "CV"
     url: /cv/

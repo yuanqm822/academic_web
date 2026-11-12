@@ -1,4 +1,4 @@
-# The "Computation" block in the left sidebar.
+# The project list on the Computation page.
 #
 # By default it lists your most recently active PUBLIC GitLab projects, read
 # from GitLab each time a page is opened. Private and internal projects never
@@ -6,7 +6,7 @@
 
 gitlab_url: "https://gitlab.act.reading.ac.uk"
 gitlab_user: "op936728"
-max_repos: 5
+max_repos: 12
 
 repos: []
 # repos:

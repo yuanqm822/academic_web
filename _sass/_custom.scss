@@ -30,6 +30,7 @@ $measure    : 43rem;     // comfortable line length for the content column
 body {
   color: $ink;
   font-family: $font-body;
+  border-top: 4px solid $accent;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -63,8 +64,8 @@ button:focus-visible {
    ========================================================================== */
 
 .masthead {
-  border-bottom: 0;
-  background: $accent;
+  border-bottom: 1px solid $rule;
+  background: #fff;
 
   &__inner-wrap {
     max-width: $page-max;
@@ -74,21 +75,17 @@ button:focus-visible {
 }
 
 .greedy-nav {
-  background: transparent;
-
   a {
     position: relative;
-    margin: 0 1.1rem;
-    color: rgba(#fff, 0.78);
+    margin: 0 1rem;
+    color: $slate;
     font-size: 0.95em;
     font-weight: 500;
 
-    &:hover { color: #fff; }
-
-    &:focus-visible { outline-color: #fff; }
+    &:hover { color: $accent; }
 
     &.is-current {
-      color: #fff;
+      color: $accent;
 
       &:after {
         content: "";
@@ -97,14 +94,14 @@ button:focus-visible {
         right: 0;
         bottom: 0.1rem;
         height: 2px;
-        background: #fff;
+        background: $accent;
       }
     }
   }
 
   .visible-links li:first-child a {
-    margin-right: 1.6rem;
-    color: #fff;
+    margin-right: 1.4rem;
+    color: $accent;
     font-family: $font-head;
     font-size: 1.15em;
     font-weight: 600;
@@ -112,22 +109,15 @@ button:focus-visible {
   }
 
   button {
-    background-color: rgba(#fff, 0.14);
+    background-color: $accent;
     border-radius: 3px;
-  }
-
-  .navicon,
-  .navicon:before,
-  .navicon:after {
-    background: #fff;
   }
 
   .hidden-links {
     border-color: $rule;
     box-shadow: 0 8px 24px rgba($ink, 0.12);
 
-    a { margin: 0; padding: 0.6rem 1rem; color: $ink; }
-    a:hover { color: $accent-dark; }
+    a { margin: 0; padding: 0.6rem 1rem; }
     a.is-current:after { display: none; }
   }
 }
@@ -335,20 +325,6 @@ button:focus-visible {
 
     &:hover { text-decoration-color: $accent-dark; }
   }
-
-  .sidebar__repos {
-    li { margin-bottom: 0.6rem; }
-
-    a {
-      color: $ink;
-      font-weight: 500;
-      text-decoration: none;
-
-      &:hover { color: $accent; text-decoration: underline; }
-    }
-
-    span { display: block; }
-  }
 }
 
 
@@ -545,6 +521,38 @@ button:focus-visible {
 // the short list on the home page has no year column
 .page__content > .pub-list {
   margin-bottom: 1.2rem;
+}
+
+
+/*
+   Code repositories (Computation page)
+   ========================================================================== */
+
+.page__content .repo-list {
+  margin: 0 0 1.1rem;
+  padding: 0;
+  list-style: none;
+
+  &:empty { display: none; }
+
+  li {
+    margin: 0;
+    padding: 0.75rem 0;
+    border-top: 1px solid $rule;
+
+    &:first-child { border-top: 0; padding-top: 0.25rem; }
+  }
+
+  a {
+    font-weight: 500;
+  }
+
+  span {
+    display: block;
+    margin-top: 0.1rem;
+    color: $slate;
+    font-size: 0.9em;
+  }
 }
 
 

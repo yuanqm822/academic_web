@@ -1,8 +1,10 @@
 ---
 layout: single
-title: "Funding"
-permalink: /funding/
+title: "Grants and awards"
+permalink: /grants-and-awards/
 author_profile: true
+redirect_from:
+  - /funding/
 ---
 
 <p class="lead">My research has been supported by collaboration grants I led or co-led between the University of Oxford and Beijing Normal University, and by scholarships and awards from the funders below.</p>

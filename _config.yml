@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Qiming (Simon) Yuan"
+title                    : "Simon (Qiming) Yuan"
 title_separator          : "-"
-name                     : &name "Qiming (Simon) Yuan"
+name                     : &name "Simon (Qiming) Yuan"
 description              : &description "Speech and language neuroscientist. Computational Technical Expert at the Centre for Integrative Neuroscience and Neurodynamics (CINN), University of Reading."
 url                      : https://yuanqm822.github.io
 baseurl                  : "/academic_web" # the subpath of your site
@@ -80,13 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Qiming (Simon) Yuan"
+  name             : "Simon (Qiming) Yuan"
   avatar           : "profile.jpg" # replace images/profile.jpg to change the photo
   bio              : "Speech and language neuroscientist. Computational Technical Expert at CINN, University of Reading."
   location         : "Reading, UK"
   employer         : "University of Reading"
+  cinn             : "https://research.reading.ac.uk/cinn/simon-yuan/" # institutional profile
   pubmed           :
-  googlescholar    : # paste your full Google Scholar profile URL here
+  googlescholar    : "https://scholar.google.com/citations?user=fNfVtEMAAAAJ"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -103,7 +104,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "qiming-simon-yuan-74b266107"
+  linkedin         : "simon-qiming-yuan-74b266107"
   orcid            : "https://orcid.org/0000-0003-0621-1338"
   pinterest        :
   soundcloud       :

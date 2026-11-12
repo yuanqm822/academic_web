@@ -1,6 +1,6 @@
 # academic_web
 
-Personal academic website of Qiming (Simon) Yuan, built with Jekyll on the
+Personal academic website of Simon (Qiming) Yuan, built with Jekyll on the
 [academicpages](https://github.com/academicpages/academicpages.github.io) template
 and hosted on GitHub Pages at <https://yuanqm822.github.io/academic_web/>.
 
@@ -13,9 +13,10 @@ and hosted on GitHub Pages at <https://yuanqm822.github.io/academic_web/>.
 | Home page text | `_pages/about.md` |
 | Research page | `_pages/research.md` |
 | CV | `_pages/cv.md` |
-| Funding page | `_pages/funding.md` |
+| Grants and awards page | `_pages/grants-and-awards.md` |
+| Computation page | `_pages/computation.md` |
 | Funders listed in the sidebar | `_data/funders.yml` |
-| "Computation" block in the sidebar (GitLab projects) | `_data/computation.yml` |
+| GitLab projects on the Computation page | `_data/computation.yml` |
 | Colours, fonts and layout | `_sass/_custom.scss` (the "Tokens" block at the top) |
 | Top menu | `_data/navigation.yml` |
 
