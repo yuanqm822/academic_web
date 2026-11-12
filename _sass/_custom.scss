@@ -7,12 +7,12 @@
    Tokens
    ========================================================================== */
 
-$ink        : #1b2733;   // headings and body text
+$ink        : #1c2530;   // headings and body text
 $slate      : #5a6672;   // secondary text
 $rule       : #dce2e8;   // hairlines
 $tint       : #f4f6f8;   // quiet backgrounds
-$accent     : #8a2a3b;   // links and highlights
-$accent-dark: #641c2a;
+$accent     : #002147;   // Oxford blue: links and highlights
+$accent-dark: #1d4f91;   // link hover
 
 $font-body  : "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-head  : "IBM Plex Serif", Georgia, "Times New Roman", serif;
@@ -30,7 +30,6 @@ $measure    : 43rem;     // comfortable line length for the content column
 body {
   color: $ink;
   font-family: $font-body;
-  border-top: 4px solid $accent;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -64,8 +63,8 @@ button:focus-visible {
    ========================================================================== */
 
 .masthead {
-  border-bottom: 1px solid $rule;
-  background: #fff;
+  border-bottom: 0;
+  background: $accent;
 
   &__inner-wrap {
     max-width: $page-max;
@@ -75,17 +74,21 @@ button:focus-visible {
 }
 
 .greedy-nav {
+  background: transparent;
+
   a {
     position: relative;
     margin: 0 1.1rem;
-    color: $slate;
+    color: rgba(#fff, 0.78);
     font-size: 0.95em;
     font-weight: 500;
 
-    &:hover { color: $ink; }
+    &:hover { color: #fff; }
+
+    &:focus-visible { outline-color: #fff; }
 
     &.is-current {
-      color: $ink;
+      color: #fff;
 
       &:after {
         content: "";
@@ -94,14 +97,14 @@ button:focus-visible {
         right: 0;
         bottom: 0.1rem;
         height: 2px;
-        background: $accent;
+        background: #fff;
       }
     }
   }
 
   .visible-links li:first-child a {
     margin-right: 1.6rem;
-    color: $ink;
+    color: #fff;
     font-family: $font-head;
     font-size: 1.15em;
     font-weight: 600;
@@ -109,15 +112,22 @@ button:focus-visible {
   }
 
   button {
-    background-color: $ink;
+    background-color: rgba(#fff, 0.14);
     border-radius: 3px;
+  }
+
+  .navicon,
+  .navicon:before,
+  .navicon:after {
+    background: #fff;
   }
 
   .hidden-links {
     border-color: $rule;
     box-shadow: 0 8px 24px rgba($ink, 0.12);
 
-    a { margin: 0; padding: 0.6rem 1rem; }
+    a { margin: 0; padding: 0.6rem 1rem; color: $ink; }
+    a:hover { color: $accent-dark; }
     a.is-current:after { display: none; }
   }
 }
@@ -318,10 +328,12 @@ button:focus-visible {
 
   .sidebar__block-more {
     font-size: 0.8125rem;
-    font-weight: 500;
-    text-decoration: none;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba($accent, 0.35);
+    text-underline-offset: 0.18em;
 
-    &:hover { text-decoration: underline; }
+    &:hover { text-decoration-color: $accent-dark; }
   }
 
   .sidebar__repos {
@@ -374,7 +386,7 @@ button:focus-visible {
 
   a {
     text-decoration: underline;
-    text-decoration-color: rgba($accent, 0.35);
+    text-decoration-color: rgba($accent, 0.45);
     text-decoration-thickness: 1px;
     text-underline-offset: 0.18em;
 
