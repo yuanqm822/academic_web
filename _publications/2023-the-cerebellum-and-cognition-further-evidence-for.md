@@ -4,8 +4,8 @@ collection: publications
 type: article
 authors: "Yuan Q, Li H, Du B, Dang Q, Chang Q, Zhang Z, Zhang M, Ding G, Lu C, Guo T"
 venue: "Cerebral Cortex"
-year: 2022
-date: 2022-12-15
+year: 2023
+date: 2023-01-01
 volume: "33"
 issue: "1"
 pages: "35–49"

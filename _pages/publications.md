@@ -17,6 +17,8 @@ You can also find my articles on [my Google Scholar profile]({{ author.googlesch
 Journal articles
 ------
 
+† Joint first authors.
+
 <ul class="publication-list">
 {% for pub in articles %}{% include publication-item.html %}{% endfor %}
 </ul>

@@ -1,8 +1,8 @@
 ---
-title: "Functional Parcellation Between Bilingual Language Control and Cognitive Control in the Cerebellum"
+title: "Functional parcellation between bilingual language control and cognitive control in the cerebellum"
 collection: publications
 type: article
-authors: "Chen J, Chang Q, Yuan Q, Ma F, Chen M, Koch CG, Guo T"
+authors: "Chen J†, Chang Q†, Yuan Q†, Ma F, Chen M, Koch CG, Guo T"
 venue: "Annals of the New York Academy of Sciences"
 year: 2025
 date: 2025-11-05

@@ -24,7 +24,7 @@ Add one file to `_publications/`, named `YEAR-short-title.md`, containing only f
 title: "Paper title"
 collection: publications
 type: article        # or: thesis
-authors: "Yuan Q, Coauthor AB"
+authors: "Yuan Q, Coauthor AB"   # add † after joint first authors
 venue: "Journal Name"
 year: 2026
 date: 2026-03-01     # used for ordering
