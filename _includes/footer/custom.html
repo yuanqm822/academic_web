@@ -1,13 +1,21 @@
 <!-- start custom footer snippets -->
 <script>
-  // The menu measures its links to decide what fits. Measure again once the
-  // web fonts have loaded, so links are not left collapsed behind the menu button.
+  // The menu measures its links to decide what fits, and each re-measure can
+  // bring back only one collapsed link. Once the page and web fonts have loaded,
+  // re-measure until every link that fits is showing again.
   (function () {
-    function remeasure() {
+    function fire() {
       var e;
       try { e = new Event("resize"); }
       catch (err) { e = document.createEvent("Event"); e.initEvent("resize", true, true); }
       window.dispatchEvent(e);
+    }
+    function remeasure() {
+      var hidden = document.querySelector("#site-nav .hidden-links");
+      for (var i = 0; i < 12; i++) {
+        if (hidden && !hidden.children.length) { break; }
+        fire();
+      }
     }
     window.addEventListener("load", remeasure);
     if (document.fonts && document.fonts.ready) { document.fonts.ready.then(remeasure); }

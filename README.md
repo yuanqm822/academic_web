@@ -8,7 +8,7 @@ and hosted on GitHub Pages at <https://simon-qiming-yuan.com>.
 
 | To change | Edit |
 | --- | --- |
-| Name, sidebar text, profile links (email, Google Scholar, ORCID) | `_config.yml`, under `author:` |
+| Name, sidebar text, address, email and profile links | `_config.yml`, under `author:` |
 | Profile photo | replace `images/profile.jpg` |
 | Home page text | `_pages/about.md` |
 | Research page | `_pages/research.md` |

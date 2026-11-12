@@ -83,12 +83,17 @@ author:
   name             : "Simon (Qiming) Yuan"
   avatar           : "profile.jpg" # replace images/profile.jpg to change the photo
   bio              : "Speech and language neuroscientist. Computational Technical Expert at CINN, University of Reading."
-  location         : "Reading, UK"
-  employer         : "University of Reading"
+  location         :
+  employer         :
+  address          : # shown as one block in the sidebar, one line each
+    - "Centre for Integrative Neuroscience and Neurodynamics (CINN)"
+    - "Room G20, Harry Pitt Building, Earley Gate"
+    - "University of Reading"
+    - "Reading RG6 6AL, United Kingdom"
   cinn             : "https://research.reading.ac.uk/cinn/simon-yuan/" # institutional profile
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=fNfVtEMAAAAJ"
-  email            :
+  email            : "simon.yuan@reading.ac.uk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

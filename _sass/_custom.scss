@@ -230,6 +230,27 @@ button:focus-visible {
   li { color: $slate; font-size: 0.875rem; line-height: 1.9; }
 
   .fa, .fas, .fab, .ai { color: $slate; }
+
+  // postal address: one marker, lines stacked beside it
+  .author__address {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    white-space: normal;
+
+    .fa { flex: 0 0 auto; margin: 0.25em 0.35em 0 0; }
+
+    // each address line is its own block, so a wrapped line stays readable
+    span span {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.8125rem;
+      line-height: 1.4;
+    }
+  }
+
+  .author__email a { word-break: break-all; }
 }
 
 @media (min-width: $wide) {
