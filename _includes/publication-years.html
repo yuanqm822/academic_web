@@ -1,0 +1,5 @@
+{%- comment -%}Publications grouped under their year. Expects `pubs`, newest first.{%- endcomment -%}
+{% assign current_year = "" %}{% assign hide_year = true %}
+<div class="dated">
+{% for pub in pubs %}{% if pub.year != current_year %}{% unless forloop.first %}</ul></div>{% endunless %}<div class="dated__row"><div class="dated__when">{{ pub.year }}</div><ul class="dated__body pub-list">{% assign current_year = pub.year %}{% endif %}{% include publication-item.html %}{% if forloop.last %}</ul></div>{% endif %}{% endfor %}
+</div>{% assign hide_year = false %}

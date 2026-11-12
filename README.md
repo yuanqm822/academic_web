@@ -13,6 +13,9 @@ and hosted on GitHub Pages at <https://yuanqm822.github.io/academic_web/>.
 | Home page text | `_pages/about.md` |
 | Research page | `_pages/research.md` |
 | CV | `_pages/cv.md` |
+| Funding page | `_pages/funding.md` |
+| Funders listed in the sidebar | `_data/funders.yml` |
+| Colours, fonts and layout | `_sass/_custom.scss` (the "Tokens" block at the top) |
 | Top menu | `_data/navigation.yml` |
 
 ## Adding a publication

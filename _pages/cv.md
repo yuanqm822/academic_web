@@ -122,9 +122,7 @@ Research skills
 Publications
 ------
 
-† Joint first authors.
+<p class="note">† Joint first authors.</p>
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
-<ul class="publication-list">
-{% for pub in pubs %}{% include publication-item.html %}{% endfor %}
-</ul>
+{% include publication-years.html %}
