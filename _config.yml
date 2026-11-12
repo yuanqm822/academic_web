@@ -9,7 +9,7 @@
 locale                   : "en-GB"
 title                    : "Simon (Qiming) Yuan"
 title_separator          : "-"
-name                     : &name "Simon (Qiming) Yuan"
+name                     : &name "Simon (Qiming) Yuan 苑启明"
 description              : &description "Speech and language neuroscientist. Computational Technical Expert at the Centre for Integrative Neuroscience and Neurodynamics (CINN), University of Reading."
 url                      : https://simon-qiming-yuan.com
 baseurl                  : "" # empty: the site is served from the root of the custom domain
